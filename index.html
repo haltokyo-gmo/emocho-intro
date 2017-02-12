@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EMO-CHO introduction</title>
+
+	<!-- Material Designのアイコンフォント -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- メニューボタンはSPのみ -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button">
+		<!-- メニューボタンがデフォルトで白いので色指定 -->
+		<div class="mdl-layout-icon mdl-color-text--grey"></div>
+
+		<!-- SP用ナビゲーション(drawer) -->
+		<div class="mdl-layout__drawer mdl-layout--small-screen-only">
+			<nav class="mdl-navigation" id="emocho-sp-navigation">
+				<a href="#top" class="mdl-navigation__link is-active">TOP</a>
+				<a href="#why" class="mdl-navigation__link">Why EMO-CHO?</a>
+				<a href="#playing_flow" class="mdl-navigation__link">Playing Flow</a>
+				<a href="#using" class="mdl-navigation__link">Using</a>
+				<a href="#schedule" class="mdl-navigation__link">Schedule</a>
+				<a href="#technical_flow" class="mdl-navigation__link">Technical Flow</a>
+				<a href="#advices" class="mdl-navigation__link">Advices</a>
+			</nav>
+		</div>
+
+		<main class="mdl-layout__content mdl-grid">
+
+			<!-- PC用ナビゲーション -->
+			<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect mdl-cell mdl-cell--2-col-desktop mdl-cell--middle mdl-cell--hide-tablet mdl-cell--hide-phone emocho-pc-navigation">
+				<nav class="mdl-tabs__tab-bar" id="emocho-pc-navigation">
+					<a href="#top" class="mdl-tabs__tab is-active">TOP</a>
+					<a href="#why" class="mdl-tabs__tab">Why EMO-CHO?</a>
+					<a href="#playing_flow" class="mdl-tabs__tab">Playing Flow</a>
+					<a href="#using" class="mdl-tabs__tab">Using</a>
+					<a href="#schedule" class="mdl-tabs__tab">Schedule</a>
+					<a href="#technical_flow" class="mdl-tabs__tab">Technical Flow</a>
+					<a href="#advices" class="mdl-tabs__tab">Advices</a>
+				</nav>
+			</div>
+
+			<div class="mdl-cell mdl-cell--2-col-desktop"></div>
+
+			<div class="mdl-cell mdl-cell--10-col-desktop mdl-cell--12-col" id="emocho-articles">
+
+				<article id="top" class="mdl-card">
+					<div class="mdl-card__title emocho-title">
+						<h1 class="mdl-card__title-text"><img src="img/logo.svg" alt="EMO-CHO" class="emocho-logo"></h1>
+						<div class="mdl-color-text--grey mdl-card__subtitle-text">an interactive game with your emotion</div>
+					</div>
+				</article>
+
+				<article id="why" class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title mdl-color--grey">
+						<h2 class="mdl-card__title-text mdl-color-text--white">Why EMO-CHO?</h2>
+					</div>
+					<div class="mdl-card__supporting-text mdl-card--border">
+						<p>
+							日本人、特に日本人女性が社会で活躍できない傾向はなぜか？<br>
+							それは自己主張が苦手だからです。<br>
+							男尊女卑で女性は男性を立てるものだという考えが、未だに後を引いているのかもしれません。
+						</p>
+						<p>
+							自己主張・自己表現ができるようになれば、生き生きとして輝いて見えるし、社会的な活躍もできるようになるのでは？<br>
+							そんな考えからEMO-CHO（えもっちょ）は生まれました。
+						</p>
+						<p>
+							感情をリアルタイムにスコア化し、それを直感的に理解できる形でフィードバックする。<br>
+							シンプルな仕組みで、普段は感情表現が苦手な人も感情を表に出せるようにしてくれます。
+						</p>
+						<p>
+							ゲーム感覚で楽しみながら、輝く女性に変身しましょう！
+						</p>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<h5>企画の経緯</h5>
+						<p>
+							最初は「女性と言えばファッション！」ということで、アパレルで使える「着せ替えARサイネージ」を考えていました。
+						</p>
+						<p>
+							でも、便利ではあるけど「女性が輝けるようになる革命」までにはならないし、<br>
+							その割に実装も大変そう…ということで没になりました。
+						</p>
+						<p>
+							そんな中、他の企画案が通って、学年でも最速クラスだったので「これでいこう」となりかけました。<br>
+							でも、正直その企画に魅力は感じてませんでした。「結局何をどうしたいの？便利なだけじゃない？」という。
+						</p>
+						<p>
+							そして「やっぱりサイネージでやりたい！」ということで、チームで企画をやり直すことにしました。<br>
+							難航する中、ネットニュースで見た「感情認識API」を使った技術ドリブンな企画を思いつきました。
+						</p>
+						<p>
+							そこからはアイデアの嵐でした。<br>
+							みんなが「こうしたらおもしろい」とか「こういうのはどう？」という案が山のように出て、<br>
+							企画に落とし込むのが逆に大変なくらいでした。
+						</p>
+						<p>
+							結局、企画書が通ったのは学年でも最後の方で、でもだからこそ一番考えられた企画だったのかもしれません。<br>
+							自分たちがつくって楽しいと思えるものをつくるのが一番いいものになると思います。結局は自己満足なのです。
+						</p>
+					</div>
+				</article>
+
+				<article id="playing_flow" class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title mdl-color--grey">
+						<h2 class="mdl-card__title-text mdl-color-text--white">Playing Flow</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<ol class="mdl-list">
+							<li class="mdl-list__item">
+								<span class="mdl-list__item-primary-content">
+									Webカメラで常に画像認識を行っています。
+								</span>
+							</li>
+							<li class="mdl-list__item">
+								<span class="mdl-list__item-primary-content">
+									人の顔を認識すると、「笑顔でスタート」するように促します。
+								</span>
+							</li>
+							<li class="mdl-list__item">
+								<span class="mdl-list__item-primary-content">
+									笑顔をつくると、感情ルーレットでランダムに感情を指定します。
+								</span>
+							</li>
+							<li class="mdl-list__item">
+								<span class="mdl-list__item-primary-content">
+									制限時間内に指定された感情を表現します。
+									感情値が高いほどスコアが高くなり、派手なエフェクトが演出されます。
+								</span>
+							</li class="mdl-list__item">
+							<li class="mdl-list__item">
+								<span class="mdl-list__item-primary-content">
+									プレイ中に最も感情値が高い瞬間の画像と、プレイ中の動画を振り返ることができます。
+									Twitterにシェアすることもできます。
+								</span>
+							</li>
+							<li class="mdl-list__item">
+								<span class="mdl-list__item-primary-content">
+									今までプレイした人たちの画像が並んで表示されます。
+									もちろん、あなたの画像も！
+								</span>
+							</li>
+						</ol>
+					</div>
+				</article>
+
+				<article id="using" class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title mdl-color--grey">
+						<h2 class="mdl-card__title-text mdl-color-text--white">Using</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<ul class="mdl-list">
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://git-scm.com/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>Git</span>
+									<span class="mdl-list__item-sub-title">ソースコード管理。正直ちゃんと使ってなかった</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://github.com/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>GitHub</span>
+									<span class="mdl-list__item-sub-title">Gitリポジトリ。オープンソースですね。シークレット情報には注意しましょう</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://www.npmjs.com/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>npm</span>
+									<span class="mdl-list__item-sub-title">依存ライブラリ管理。これなしでは生きられない</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://webpack.github.io/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>webpack</span>
+									<span class="mdl-list__item-sub-title">ソースコードをまとめたり変換したりするやつ。使えば使うほど旨味が出ます</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://www.w3.org/TR/html5/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>HTML5</span>
+									<span class="mdl-list__item-sub-title">いわずもがな。タグは当たり前。APIは後述</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="http://sass-lang.com/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>Sass</span>
+									<span class="mdl-list__item-sub-title">CSSを便利に書けるやつ。SassというかSCSS</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://babeljs.io/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>Babel</span>
+									<span class="mdl-list__item-sub-title">JSを便利に書けるやつ。今回はES2015だったけどTypeScriptの方がオススメ</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://developer.mozilla.org/ja/docs/Web/API/Navigator/getUserMedia" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>Navigator.getUserMedia()</span>
+									<span class="mdl-list__item-sub-title">Webカメラの映像をとってくるやつ。FireFoxしかまともに実装されてなかった</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://developer.mozilla.org/ja/docs/Web/API/HTMLVideoElement" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>HTMLVideoElement</span>
+									<span class="mdl-list__item-sub-title">WebRTCでとってきた映像とか録画した映像とか</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>MediaRecorder</span>
+									<span class="mdl-list__item-sub-title">Canvasとかを録画するやつ</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Canvas" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>Canvas API</span>
+									<span class="mdl-list__item-sub-title">HTMLで自由度の高いグラフィック表現できるやつ。素でも結構便利</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="http://www.createjs.com/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>CreateJS</span>
+									<span class="mdl-list__item-sub-title">Canvasの描画やアニメーションを便利に書けるやつ。結構古かった。今だとUnityなのかなぁ</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://visionmedia.github.io/superagent/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>SuperAgent</span>
+									<span class="mdl-list__item-sub-title">Ajaxやつ。Web API叩くマン</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://azure.microsoft.com/ja-jp/services/cognitive-services/face/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>Face API</span>
+									<span class="mdl-list__item-sub-title">顔認識API。静止画から顔の矩形とかパーツの情報がとれる</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://azure.microsoft.com/ja-jp/services/cognitive-services/emotion/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>Emotion API</span>
+									<span class="mdl-list__item-sub-title">感情認識API。正直これに丸投げだった</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="http://php.net/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>PHP</span>
+									<span class="mdl-list__item-sub-title">いわずもがな。Twitter API叩くために渋々使った</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://twitteroauth.com/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>TwitterOAuth</span>
+									<span class="mdl-list__item-sub-title">Twitter APIを簡単に叩けるようにしてくれるやつ。簡単に使えすぎてよくわかってない</span>
+								</a>
+							</li>
+							<li class="mdl-list__item mdl-list__item--two-line">
+								<a href="https://ffmpeg.org/" class="mdl-list__item-primary-content mdl-color-text--black">
+									<span>FFmpeg</span>
+									<span class="mdl-list__item-sub-title">みんな大好きFFmpeg。動画形式が悲しい感じだったのでデコード／エンコードするやつ</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</article>
+
+				<article id="schedule" class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title mdl-color--grey">
+						<h2 class="mdl-card__title-text mdl-color-text--white">Schedule</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<img src="img/schedule.svg" alt="schedule">
+					</div>
+				</article>
+
+				<article id="technical_flow" class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title mdl-color--grey">
+						<h2 class="mdl-card__title-text mdl-color-text--white">Technical Flow</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<ol class="mdl-list">
+							<li class="mdl-list__item">Initialize</li>
+							<li class="mdl-list__item">Get WebCam Stream</li>
+							<li class="mdl-list__item">Render </li>
+						</ol>
+					</div>
+				</article>
+
+				<article id="advices" class="mdl-card mdl-shadow--2dp">
+					<div class="mdl-card__title mdl-color--grey">
+						<h2 class="mdl-card__title-text mdl-color-text--white">Advices</h2>
+					</div>
+					<div class="mdl-card__supporting-text">
+						comming soon...
+					</div>
+				</article>
+
+			</div>
+
+		</main>
+
+		<footer class="mdl-mini-footer">
+			<div class="mdl-mini-footer__left-section">
+				Great Misawa Organization &copy; 2016-2017
+			</div>
+		</footer>
+
+	</div>
+
+	<script defer src="node_modules/material-design-lite/material.min.js"></script>
+	<script defer src="js/script.js"></script>
+</body>
+</html>

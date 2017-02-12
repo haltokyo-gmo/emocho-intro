@@ -1,0 +1,35 @@
+{
+  "name": "emocho-intro",
+  "version": "1.0.0",
+  "description": "EMO-CHO introduction page",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "watch": "./node_modules/.bin/webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haltokyo-gmo/emocho-intro.git"
+  },
+  "keywords": [],
+  "author": "Great Misawa Organization",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haltokyo-gmo/emocho-intro/issues"
+  },
+  "homepage": "https://github.com/haltokyo-gmo/emocho-intro#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "material-design-lite": "^1.3.0",
+    "node-sass": "^4.5.0",
+    "postcss-loader": "^1.2.2",
+    "sass-loader": "^5.0.1",
+    "style-loader": "^0.13.1",
+    "svg-url-loader": "^2.0.1",
+    "ts-loader": "^2.0.0",
+    "typescript": "^2.1.6",
+    "webpack": "^2.2.1"
+  }
+}
