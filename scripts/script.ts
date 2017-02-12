@@ -1,3 +1,5 @@
+import "material-design-lite";
+
 // 指定のIDのarticleまで移動する & ナビゲータを更新
 const selectNavigator = (id: string) => {
 	Array.prototype.forEach.call(document.querySelectorAll("nav a.is-active"), (a: Element) => {
